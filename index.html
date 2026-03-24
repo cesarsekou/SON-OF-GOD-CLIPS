@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOGCLIPS — Le Reel Maker qu'il te faut</title>
+    <meta name="description" content="Sogclips — Des images qui captivent. Des Reels qui marquent.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+
+    <!-- Minimal Navigation (Alex Jackson style) -->
+    <nav class="site-nav" id="site-nav">
+        <a href="#home" class="nav-brand">SOGCLIPS</a>
+        <div class="nav-links">
+            <a href="#work">PORTFOLIO</a>
+            <a href="#about">À PROPOS</a>
+            <a href="#contact">CONTACT</a>
+        </div>
+    </nav>
+
+    <!-- Hero: Swipeable Full-screen video background -->
+    <header class="hero" id="home">
+        <div class="hero-video-bg">
+            <div class="swiper hero-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <video autoplay muted loop playsinline>
+                            <source src="BOUTIQUES/v24044gl0000cugjla7og65sqjhh2ft0.MP4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="swiper-slide">
+                        <video autoplay muted loop playsinline>
+                            <source src="CORPORATE/RECRUTEMENT ANTILIA.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="swiper-slide">
+                        <video autoplay muted loop playsinline>
+                            <source src="IMMOBILIER/REEL TRIPLEX BASSAM.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="line-1">LE REEL MAKER</span>
+                <span class="line-2">QU'IL TE FAUT</span>
+            </h1>
+            <a href="#work" class="hero-cta">DÉCOUVRIR LE PORTFOLIO</a>
+        </div>
+        <div class="hero-swipe-hint">
+            <span>SWIPE</span>
+            <i class="fa-solid fa-arrow-right-long"></i>
+        </div>
+        <div class="hero-scroll">
+            <div class="scroll-line"></div>
+        </div>
+    </header>
+
+    <!-- Gear Showcase -->
+    <section class="gear-showcase" id="work">
+        <div class="gear-content">
+            <div class="gear-text">
+                <span class="featured-label" style="padding:0; margin-bottom:1rem; display:block;">NOTRE EXIGENCE</span>
+                <h2 class="gear-title">DES ÉQUIPEMENTS DE POINTE POUR UNE QUALITÉ CINÉMATOGRAPHIQUE.</h2>
+                <p class="gear-desc">Pour des visuels qui marquent les esprits, j'utilise un arsenal de production vidéo haut de gamme. Caméras cinéma, optiques lumineuses de précision, drones DJI et stabilisation de pointe : chaque projet bénéficie des meilleurs standards de l'industrie pour un rendu exceptionnel.</p>
+            </div>
+            <div class="gear-image-stack">
+                <div class="gear-image">
+                    <img src="mes photos/IMG_5644.PNG" alt="Appareils SOGCLIPS">
+                </div>
+                <div class="gear-image">
+                    <img src="gear.png" alt="Matériel Vidéo Professionnel SOGCLIPS">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <div class="portfolio-section-header">
+        <h2 class="portfolio-title"><span class="accent">DÉCOUVREZ</span><br>NOTRE UNIVERS</h2>
+    </div>
+
+    <!-- Portfolio Filters -->
+    <div class="portfolio-filter">
+        <button class="filter-btn " data-filter="CORPORATE">CORPORATE</button>
+        <button class="filter-btn active" data-filter="IMMOBILIER">IMMOBILIER</button>
+        <button class="filter-btn " data-filter="BOUTIQUES">BOUTIQUES</button>
+        <button class="filter-btn " data-filter="CEREMONIE">CEREMONIE</button>
+        <button class="filter-btn " data-filter="CONCERTS">CONCERTS</button>
+        <button class="filter-btn " data-filter="RESTAURANTS">RESTAURANTS</button>
+        <button class="filter-btn " data-filter="LIFESTYLE">LIFESTYLE</button>
+        <button class="filter-btn " data-filter="FORMATION">FORMATION</button>
+        <button class="filter-btn " data-filter="SPORT">SPORT</button>
+    </div>
+
+    <!-- Portfolio Vertical Grid -->
+    <section class="portfolio-grid">
+        <article class="project-card" data-category="CORPORATE">
+            <div class="card-video-wrapper">
+                <video
+                    preload="metadata"
+                    muted
+                    loop
+                    playsinline
+                    src="CORPORATE/VLOG MISISON OUAGA.mov#t=0.1">
+                </video>
+                <div class="card-overlay">
+                    <span class="card-tag">CORPORATE</span>
+                    <button class="card-play-btn" aria-label="Lire la vidéo">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                    <div class="card-info-inner">
+                        <h3 class="card-inner-title">CORPORATE</h3> <!-- Using category name for now as a clean handle -->
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="project-card" data-category="CORPORATE">
+            <div class="card-video-wrapper">
+                <video
+                    preload="metadata"
+                    muted
+                    loop
+                    playsinline
+                    src="CORPORATE/v24044gl0000d15kdafog65s4l7emiq0.MP4#t=0.1">
+                </video>
+                <div class="card-overlay">
+                    <span class="card-tag">CORPORATE</span>
+                    <button class="card-play-btn" aria-label="Lire la vidéo">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                    <div class="card-info-inner">
+                        <h3 class="card-inner-title">CORPORATE</h3> <!-- Using category name for now as a clean handle -->
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="project-card" data-category="CORPORATE">
+            <div class="card-video-wrapper">
+                <video
+                    preload="metadata"
+                    muted
+                    loop
+                    playsinline
+                    src="CORPORATE/v0f044gc0000csgllnfog65jgr70j0j0.MP4#t=0.1">
+                </video>
+                <div class="card-overlay">
+                    <span class="card-tag">CORPORATE</span>
+                    <button class="card-play-btn" aria-label="Lire la vidéo">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                    <div class="card-info-inner">
+                        <h3 class="card-inner-title">CORPORATE</h3> <!-- Using category name for now as a clean handle -->
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="project-card" data-category="CORPORATE">
+            <div class="card-video-wrapper">
+                <video
+                    preload="metadata"
+                    muted
+                    loop
+                    playsinline
+                    src="CORPORATE/v0f044gc0000cs1g51nog65gbqmi4mjg.MP4#t=0.1">
+                </video>
+                <div class="card-overlay">
+                    <span class="card-tag">CORPORATE</span>
+                    <button class="card-play-btn" aria-label="Lire la vidéo">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                    <div class="card-info-inner">
+                        <h3 class="card-inner-title">CORPORATE</h3> <!-- Using category name for now as a clean handle -->
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="project-card" data-category="CORPORATE">
+            <div class="card-video-wrapper">
+                <video
+                    preload="metadata"
+                    muted
+                    loop
+                    playsinline
+                    src="CORPORATE/RECRUTEMENT ANTILIA.mp4#t=0.1">
+                </video>
+                <div class="card-overlay">
+                    <span class="card-tag">CORPORATE</span>
+                    <button class="card-play-btn" aria-label="Lire la vidéo">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                    <div class="card-info-inner">
+                        <h3 class="card-inner-title">CORPORATE</h3> <!-- Using category name for now as a clean handle -->
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="project-card" data-category="CORPORATE">
+            <div class="card-video-wrapper">
+                <video
+                    preload="metadata"
+                    muted
+                    loop
+                    playsinline
+                    src="CORPORATE/v24044gl0000d0dt8nvog65v0mnv9ru0.MP4#t=0.1">
+                </video>
+                <div class="card-overlay">
+                    <span class="card-tag">CORPORATE</span>
+                    <button class="card-play-btn" aria-label="Lire la vidéo">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                    <div class="card-info-inner">
+                        <h3 class="card-inner-title">CORPORATE</h3> <!-- Using category name for now as a clean handle -->
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="project-card" data-category="IMMOBILIER">
+            <div class="card-video-wrapper">
+                <video
+                    preload="metadata"
+                    muted
+                    loop
+                    playsinline
+                    src="IMMOBILIER/v24044gl0000cvfjq27og65j3denk96g.MP4#t=0.1">
+                </video>
+                <div class="card-overlay">
+                    <span class="card-tag">IMMOBILIER</span>
+                    <button class="card-play-btn" aria-label="Lire la vidéo">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                    <div class="card-info-inner">
+                        <h3 class="card-inner-title">IMMOBILIER</h3> <!-- Using category name for now as a clean handle -->
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="project-card" data-category="IMMOBILIER">
+            <div class="card-video-wrapper">
+                <video
+                    preload="metadata"
+                    muted
+                    loop
+                    playsinline
+                    src="IMMOBILIER/REEL TRIPLEX BASSAM.mp4#t=0.1">
+                </video>
+                <div class="card-overlay">
+                    <span class="card-tag">IMMOBILIER</span>
+                    <button class="card-play-btn" aria-label="Lire la vidéo">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                    <div class="card-info-inner">
+                        <h3 class="card-inner-title">IMMOBILIER</h3> <!-- Using category name for now as a clean handle -->
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="project-card" data-category="IMMOBILIER">
+            <div class="card-video-wrapper">
+                <video
+                    preload="metadata"
+                    muted
+                    loop
+                    playsinline
+                    src="IMMOBILIER/v24044gl0000d0ucurfog65ukcqbfhh0.MP4#t=0.1">
+                </video>
+                <div class="card-overlay">
+                    <span class="card-tag">IMMOBILIER</span>
+                    <button class="card-play-btn" aria-label="Lire la vidéo">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                    <div class="card-info-inner">
+                        <h3 class="card-inner-title">IMMOBILIER</h3> <!-- Using category name for now as a clean handle -->
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="project-card" data-category="IMMOBILIER">
+            <div class="card-video-wrapper">
+                <video
+                    preload="metadata"
+                    muted
+                    loop
+                    playsinline
+                    src="IMMOBILIER/AIRBNB ANTILIA.mp4#t=0.1">
+                </video>
+                <div class="card-overlay">
+                    <span class="card-tag">IMMOBILIER</span>
+                    <button class="card-play-btn" aria-label="Lire la vidéo">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                    <div class="card-info-inner">
+                        <h3 class="card-inner-title">IMMOBILIER</h3> <!-- Using category name for now as a clean handle -->
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="project-card" data-category="IMMOBILIER">
+            <div class="card-video-wrapper">
+                <video
+                    preload="metadata"
+                    muted
+                    loop
+                    playsinline
+                    src="IMMOBILIER/v24044gl0000cuv417nog65suncaqang.MP4#t=0.1">
+                </video>
+                <div class="card-overlay">
+                    <span class="card-tag">IMMOBILIER</span>
+                    <button class="card-play-btn" aria-label="Lire la vidéo">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                    <div class="card-info-inner">
+                        <h3 class="card-inner-title">IMMOBILIER</h3> <!-- Using category name for now as a clean handle -->
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="project-card" data-category="BOUTIQUES">
+            <div class="card-video-wrapper">
+                <video
+                    preload="metadata"
+                    muted
+                    loop
+                    playsinline
+                    src="BOUTIQUES/v24044gl0000cugjla7og65sqjhh2ft0.MP4#t=0.1">
+                </video>
+                <div class="card-overlay">
+                    <span class="card-tag">BOUTIQUES</span>
+                    <button class="card-play-btn" aria-label="Lire la vidéo">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                    <div class="card-info-inner">
+                        <h3 class="card-inner-title">BOUTIQUES</h3> <!-- Using category name for now as a clean handle -->
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="project-card" data-category="BOUTIQUES">
+            <div class="card-video-wrapper">
+                <video
+                    preload="metadata"
+                    muted
+                    loop
+                    playsinline
+                    src="BOUTIQUES/v24044gl0000d110ghnog65g0tjvu4sg.MP4#t=0.1">
+                </video>
+                <div class="card-overlay">
+                    <span class="card-tag">BOUTIQUES</span>
+                    <button class="card-play-btn" aria-label="Lire la vidéo">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                    <div class="card-info-inner">
+                        <h3 class="card-inner-title">BOUTIQUES</h3> <!-- Using category name for now as a clean handle -->
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="project-card" data-category="BOUTIQUES">
+            <div class="card-video-wrapper">
+                <video
+                    preload="metadata"
+                    muted
+                    loop
+                    playsinline
+                    src="BOUTIQUES/v0f044gc0000crlktjfog65sjcc1o720.MP4#t=0.1">
+                </video>
+                <div class="card-overlay">
+                    <span class="card-tag">BOUTIQUES</span>
+                    <button class="card-play-btn" aria-label="Lire la vidéo">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                    <div class="card-info-inner">
+                        <h3 class="card-inner-title">BOUTIQUES</h3> <!-- Using category name for now as a clean handle -->
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="project-card" data-category="BOUTIQUES">
+            <div class="card-video-wrapper">
+                <video
+                    preload="metadata"
+                    muted
+                    loop
+                    playsinline
+                    src="BOUTIQUES/v24044gl0000cv1362vog65m07jb5ji0.MP4#t=0.1">
+                </video>
+                <div class="card-overlay">
+                    <span class="card-tag">BOUTIQUES</span>
+                    <button class="card-play-btn" aria-label="Lire la vidéo">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                    <div class="card-info-inner">
+                        <h3 class="card-inner-title">BOUTIQUES</h3> <!-- Using category name for now as a clean handle -->
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="project-card" data-category="BOUTIQUES">
+            <div class="card-video-wrapper">
+                <video
+                    preload="metadata"
+                    muted
+                    loop
+                    playsinline
+                    src="BOUTIQUES/v0f044gc0000crji94fog65ls84v1m60.MP4#t=0.1">
+                </video>
+                <div class="card-overlay">
+                    <span class="card-tag">BOUTIQUES</span>
+                    <button class="card-play-btn" aria-label="Lire la vidéo">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                    <div class="card-info-inner">
+                        <h3 class="card-inner-title">BOUTIQUES</h3> <!-- Using category name for now as a clean handle -->
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="project-card" data-category="CEREMONIE">
+            <div class="card-video-wrapper">
+                <video
+                    preload="metadata"
+                    muted
+                    loop
+                    playsinline
+                    src="CEREMONIE/RÉCAP EPV.mp4#t=0.1">
+                </video>
+                <div class="card-overlay">
+                    <span class="card-tag">CEREMONIE</span>
+                    <button class="card-play-btn" aria-label="Lire la vidéo">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                    <div class="card-info-inner">
+                        <h3 class="card-inner-title">CEREMONIE</h3> <!-- Using category name for now as a clean handle -->
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="project-card" data-category="CEREMONIE">
+            <div class="card-video-wrapper">
+                <video
+                    preload="metadata"
+                    muted
+                    loop
+                    playsinline
+                    src="CEREMONIE/LENA BEAUTY.mp4#t=0.1">
+                </video>
+                <div class="card-overlay">
+                    <span class="card-tag">CEREMONIE</span>
+                    <button class="card-play-btn" aria-label="Lire la vidéo">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                    <div class="card-info-inner">
+                        <h3 class="card-inner-title">CEREMONIE</h3> <!-- Using category name for now as a clean handle -->
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="project-card" data-category="CONCERTS">
+            <div class="card-video-wrapper">
+                <video
+                    preload="metadata"
+                    muted
+                    loop
+                    playsinline
+                    src="CONCERTS/v0f044gc0000crksnsnog65nkn2ftnmg.MP4#t=0.1">
+                </video>
+                <div class="card-overlay">
+                    <span class="card-tag">CONCERTS</span>
+                    <button class="card-play-btn" aria-label="Lire la vidéo">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                    <div class="card-info-inner">
+                        <h3 class="card-inner-title">CONCERTS</h3> <!-- Using category name for now as a clean handle -->
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="project-card" data-category="CONCERTS">
+            <div class="card-video-wrapper">
+                <video
+                    preload="metadata"
+                    muted
+                    loop
+                    playsinline
+                    src="CONCERTS/ATG EDIT.mp4#t=0.1">
+                </video>
+                <div class="card-overlay">
+                    <span class="card-tag">CONCERTS</span>
+                    <button class="card-play-btn" aria-label="Lire la vidéo">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                    <div class="card-info-inner">
+                        <h3 class="card-inner-title">CONCERTS</h3> <!-- Using category name for now as a clean handle -->
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="project-card" data-category="CONCERTS">
+            <div class="card-video-wrapper">
+                <video
+                    preload="metadata"
+                    muted
+                    loop
+                    playsinline
+                    src="CONCERTS/v0f044gc0000cskjejnog65nmturuugg 2.MP4#t=0.1">
+                </video>
+                <div class="card-overlay">
+                    <span class="card-tag">CONCERTS</span>
+                    <button class="card-play-btn" aria-label="Lire la vidéo">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                    <div class="card-info-inner">
+                        <h3 class="card-inner-title">CONCERTS</h3> <!-- Using category name for now as a clean handle -->
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="project-card" data-category="CONCERTS">
+            <div class="card-video-wrapper">
+                <video
+                    preload="metadata"
+                    muted
+                    loop
+                    playsinline
+                    src="CONCERTS/v24044gl0000ct8ejjvog65l4m8764vg.MP4#t=0.1">
+                </video>
+                <div class="card-overlay">
+                    <span class="card-tag">CONCERTS</span>
+                    <button class="card-play-btn" aria-label="Lire la vidéo">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                    <div class="card-info-inner">
+                        <h3 class="card-inner-title">CONCERTS</h3> <!-- Using category name for now as a clean handle -->
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="project-card" data-category="RESTAURANTS">
+            <div class="card-video-wrapper">
+                <video
+                    preload="metadata"
+                    muted
+                    loop
+                    playsinline
+                    src="RESTAURANTS/v24044gl0000cuprbfvog65piqk3j32g.MP4#t=0.1">
+                </video>
+                <div class="card-overlay">
+                    <span class="card-tag">RESTAURANTS</span>
+                    <button class="card-play-btn" aria-label="Lire la vidéo">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                    <div class="card-info-inner">
+                        <h3 class="card-inner-title">RESTAURANTS</h3> <!-- Using category name for now as a clean handle -->
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="project-card" data-category="LIFESTYLE">
+            <div class="card-video-wrapper">
+                <video
+                    preload="metadata"
+                    muted
+                    loop
+                    playsinline
+                    src="LIFESTYLE/LIFESTYLE SK.mp4#t=0.1">
+                </video>
+                <div class="card-overlay">
+                    <span class="card-tag">LIFESTYLE</span>
+                    <button class="card-play-btn" aria-label="Lire la vidéo">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                    <div class="card-info-inner">
+                        <h3 class="card-inner-title">LIFESTYLE</h3> <!-- Using category name for now as a clean handle -->
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="project-card" data-category="LIFESTYLE">
+            <div class="card-video-wrapper">
+                <video
+                    preload="metadata"
+                    muted
+                    loop
+                    playsinline
+                    src="LIFESTYLE/J.DJATO.mp4#t=0.1">
+                </video>
+                <div class="card-overlay">
+                    <span class="card-tag">LIFESTYLE</span>
+                    <button class="card-play-btn" aria-label="Lire la vidéo">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                    <div class="card-info-inner">
+                        <h3 class="card-inner-title">LIFESTYLE</h3> <!-- Using category name for now as a clean handle -->
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="project-card" data-category="LIFESTYLE">
+            <div class="card-video-wrapper">
+                <video
+                    preload="metadata"
+                    muted
+                    loop
+                    playsinline
+                    src="LIFESTYLE/SK BIRTHDAY V.mp4#t=0.1">
+                </video>
+                <div class="card-overlay">
+                    <span class="card-tag">LIFESTYLE</span>
+                    <button class="card-play-btn" aria-label="Lire la vidéo">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                    <div class="card-info-inner">
+                        <h3 class="card-inner-title">LIFESTYLE</h3> <!-- Using category name for now as a clean handle -->
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="project-card" data-category="FORMATION">
+            <div class="card-video-wrapper">
+                <video
+                    preload="metadata"
+                    muted
+                    loop
+                    playsinline
+                    src="FORMATION/v24044gl0000d0hsaenog65qllqseofg.MP4#t=0.1">
+                </video>
+                <div class="card-overlay">
+                    <span class="card-tag">FORMATION</span>
+                    <button class="card-play-btn" aria-label="Lire la vidéo">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                    <div class="card-info-inner">
+                        <h3 class="card-inner-title">FORMATION</h3> <!-- Using category name for now as a clean handle -->
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="project-card" data-category="FORMATION">
+            <div class="card-video-wrapper">
+                <video
+                    preload="metadata"
+                    muted
+                    loop
+                    playsinline
+                    src="FORMATION/VLOG FORMATION BOUAKÉ.mp4#t=0.1">
+                </video>
+                <div class="card-overlay">
+                    <span class="card-tag">FORMATION</span>
+                    <button class="card-play-btn" aria-label="Lire la vidéo">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                    <div class="card-info-inner">
+                        <h3 class="card-inner-title">FORMATION</h3> <!-- Using category name for now as a clean handle -->
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="project-card" data-category="FORMATION">
+            <div class="card-video-wrapper">
+                <video
+                    preload="metadata"
+                    muted
+                    loop
+                    playsinline
+                    src="FORMATION/MASTERCLASS FLORY.mp4#t=0.1">
+                </video>
+                <div class="card-overlay">
+                    <span class="card-tag">FORMATION</span>
+                    <button class="card-play-btn" aria-label="Lire la vidéo">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                    <div class="card-info-inner">
+                        <h3 class="card-inner-title">FORMATION</h3> <!-- Using category name for now as a clean handle -->
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="project-card" data-category="SPORT">
+            <div class="card-video-wrapper">
+                <video
+                    preload="metadata"
+                    muted
+                    loop
+                    playsinline
+                    src="SPORT/v24044gl0000cv2e4lvog65oahpugcgg.MP4#t=0.1">
+                </video>
+                <div class="card-overlay">
+                    <span class="card-tag">SPORT</span>
+                    <button class="card-play-btn" aria-label="Lire la vidéo">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                    <div class="card-info-inner">
+                        <h3 class="card-inner-title">SPORT</h3> <!-- Using category name for now as a clean handle -->
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <!-- About (Qui sommes nous style) -->
+    <section class="about" id="about">
+        <div class="about-portrait">
+            <img src="mes photos/IMG_5647.PNG" alt="Sogclips — Reel Maker">
+        </div>
+        <div class="about-content">
+            <div class="about-label">QUI SUIS-JE ?</div>
+            <h2 class="about-title">SOGCLIPS</h2>
+            <p class="about-text">
+                Je suis un créateur de contenu passionné par l'image et le storytelling visuel. Avec une expertise dans la création de Reels, TikToks et Shorts, je transforme vos idées en vidéos percutantes qui captivent et engagent.
+            </p>
+            <p class="about-text">
+                Mon approche combine un œil artistique aiguisé et une maîtrise technique pour produire du contenu qui non seulement séduit, mais performe sur tous les algorithmes.
+            </p>
+            <a href="#contact" class="about-cta">TRAVAILLER ENSEMBLE</a>
+        </div>
+    </section>
+
+    <!-- Footer Contact (Alex Jackson style) -->
+    <footer class="footer" id="contact">
+        <div class="footer-inner">
+            <h2 class="footer-cta-text">UNE IDÉE ?<br><em>IMAGINONS ENSEMBLE.</em></h2>
+            <div class="footer-contact-links">
+                <a href="https://wa.me/2250749013665" class="footer-link">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    WhatsApp
+                </a>
+                <a href="mailto:contact@sogclips.com" class="footer-link">
+                    <i class="fa-solid fa-envelope"></i>
+                    contact@sogclips.com
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 SOGCLIPS</span>
+            <span>LE REEL MAKER QU'IL TE FAUT</span>
+        </div>
+    </footer>
+
+    <!-- Video Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-overlay"></div>
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="lightbox-close"><i class="fa-solid fa-xmark"></i></button>
+            <video id="lightbox-video" controls playsinline></video>
+        </div>
+    </div>
+
+    <!-- WhatsApp Floating Popup -->
+    <a href="https://wa.me/2250749013665" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">Discuter sur WhatsApp</span>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
