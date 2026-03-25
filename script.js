@@ -140,14 +140,20 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // ---- 4. Fade-in on scroll ----
+    // ---- 4. Fade-in on scroll & Lazy Video Load ----
     const io = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
+                
+                // Lazy load video metadata when in view
+                const video = entry.target.querySelector('video');
+                if (video && video.getAttribute('preload') === 'none') {
+                    video.setAttribute('preload', 'metadata');
+                }
             }
         });
-    }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
+    }, { threshold: 0.1, rootMargin: '0px 0px 200px 0px' });
 
     document.querySelectorAll('.service-item, .project-card').forEach(el => {
         el.style.opacity = '0';

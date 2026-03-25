@@ -134,7 +134,7 @@ for cat, vids in categories.items():
         html_template += f"""        <article class="project-card" data-category="{cat}">
             <div class="card-video-wrapper">
                 <video
-                    preload="metadata"
+                    preload="none"
                     muted
                     loop
                     playsinline
