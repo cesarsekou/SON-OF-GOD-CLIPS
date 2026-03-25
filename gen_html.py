@@ -1,4 +1,5 @@
 import os
+import urllib.parse
 from collections import defaultdict
 
 # Read all videos from videos.txt — format: CATEGORY/filename.mp4
@@ -12,7 +13,9 @@ if os.path.exists('videos.txt'):
                 cat = parts[0].strip()
                 filename = parts[1].strip()
                 title = filename.rsplit('.', 1)[0]
-                videos_data.append({'cat': cat, 'file': line, 'title': title})
+                # URL encode the entire path for safe serving
+                encoded_file = urllib.parse.quote(line)
+                videos_data.append({'cat': cat, 'file': line, 'encoded_file': encoded_file, 'title': title})
 
 # Group by category
 categories = defaultdict(list)
@@ -58,12 +61,12 @@ html_template = """<!DOCTYPE html>
                     </div>
                     <div class="swiper-slide">
                         <video autoplay muted loop playsinline>
-                            <source src="CORPORATE/RECRUTEMENT ANTILIA.mp4" type="video/mp4">
+                            <source src="CORPORATE/RECRUTEMENT%20ANTILIA.mp4" type="video/mp4">
                         </video>
                     </div>
                     <div class="swiper-slide">
                         <video autoplay muted loop playsinline>
-                            <source src="IMMOBILIER/REEL TRIPLEX BASSAM.mp4" type="video/mp4">
+                            <source src="IMMOBILIER/REEL%20TRIPLEX%20BASSAM.mp4" type="video/mp4">
                         </video>
                     </div>
                 </div>
@@ -126,9 +129,8 @@ html_template += """    </div>
 
 for cat, vids in categories.items():
     for v in vids:
-        filepath = v['file']
+        filepath_encoded = v['encoded_file']
         title = v['title']
-        filepath_safe = filepath.replace("'", "&#39;")
         html_template += f"""        <article class="project-card" data-category="{cat}">
             <div class="card-video-wrapper">
                 <video
@@ -136,7 +138,7 @@ for cat, vids in categories.items():
                     muted
                     loop
                     playsinline
-                    src="{filepath_safe}#t=0.1">
+                    src="{filepath_encoded}#t=0.1">
                 </video>
                 <div class="card-overlay">
                     <span class="card-tag">{cat.upper()}</span>
