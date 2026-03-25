@@ -159,28 +159,30 @@ body {
 
 .hero-swipe-hint {
     position: absolute;
-    bottom: 8rem;
-    right: 3rem;
+    bottom: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 2;
     display: flex;
     align-items: center;
     gap: 0.8rem;
     color: var(--white);
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     font-weight: 700;
-    letter-spacing: 0.15em;
-    opacity: 0.7;
+    letter-spacing: 0.2em;
+    opacity: 0.85;
     pointer-events: none;
-    animation: swipe-pulse 2.5s ease-in-out infinite;
+    animation: swipe-pulse-centered 2.5s ease-in-out infinite;
+    text-shadow: 0 4px 10px rgba(0,0,0,0.8);
 }
 
 .hero-swipe-hint i {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
-@keyframes swipe-pulse {
-    0%, 100% { transform: translateX(0); opacity: 0.5; }
-    50% { transform: translateX(15px); opacity: 1; color: var(--red); }
+@keyframes swipe-pulse-centered {
+    0%, 100% { transform: translateX(-50%); opacity: 0.6; }
+    50% { transform: translateX(calc(-50% + 20px)); opacity: 1; color: var(--red); }
 }
 
 .hero-scroll {
